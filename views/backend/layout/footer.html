@@ -1,0 +1,22 @@
+{{define "backend.layout.footer"}}
+</main>
+<footer class="py-4 bg-light mt-auto">
+    <div class="container-fluid px-4">
+        <div class="d-flex align-items-center justify-content-between small">
+            <div class="text-muted">Copyright &copy; 学习论坛 2022</div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+<script>
+    $('.nav a').each(function (index, item) {
+        let path = $(item).attr('data-path');
+        if (window.location.pathname.indexOf(path) >= 0) {
+           $(item).addClass("active")
+        }
+    });
+</script>
+</body>
+</html>
+{{end}}

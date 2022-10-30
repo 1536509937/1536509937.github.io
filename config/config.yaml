@@ -1,0 +1,29 @@
+app:
+  version: "0.0.1"
+  name: "学习论坛"
+  desc: "学习论坛"
+  keywords: "学习论坛"
+  visitMode: "guest"
+system:
+  env: "localhost"
+  addr: "8081"
+session:
+  name: "ku-bbs"
+  secret: "123456"
+db:
+  host: "qyforever.com"
+  port: "3306"
+  name: "kubbs"
+  pass: "pCH3FRbFnSs3c7YG"
+  db: "kubbs"
+redis:
+  host: "127.0.0.1"
+  pass: ""
+  port: "6379"
+  db: "1"
+  idleTimeout: "10"
+upload:
+  path: "../assets/upload"
+  imageExt: [ "png", "jpg", "jpeg", "gif" ]
+  avatarFileSize: 1 # 单位 M
+  topicFileSize: 2 # 单位 M
